@@ -66,7 +66,7 @@
             <div class="media-left"> <i class="flaticon-delivery-truck-1"></i> </div>
             <div class="media-body">
               <h5>Free Shipping</h5>
-              <span>On order over $99</span></div>
+              <span>On order over £99</span></div>
           </li>
           <!-- Money Return -->
           <li>
@@ -119,7 +119,7 @@
             <span class="tag">{{@$product->category->name}}</span> <a href="{{url('product-details/'.@$product->id)}}" class="tittle">{{@$product->name}}</a> </br>
               <!-- Reviews -->
               
-              <div class="price">${{@$product->price}}</div>
+              <div class="price">£{{@$product->price}}</div>
             <a href="{{ url('cart-store/'.$product->id.'/1')}}" class="cart-btn"><i class="icon-basket-loaded"></i></a> </article>
           </div>
           @endforeach
@@ -154,7 +154,7 @@
                   <!-- Content --> 
                   <span class="tag">{{@$pro->category->name}}</span> <a href="{{url('product-details/'.@$product->id)}}" class="tittle">{{@$pro->name}}</a> </br>
                   <!-- Reviews -->
-                  <div class="price">${{@$product->price}} </div>
+                  <div class="price">£{{@$product->price}} </div>
                   <a href="{{ url('cart-store/'.@$product->id.'/1')}}" class="cart-btn"><i class="icon-basket-loaded"></i></a> </article>
               </div>
               @endforeach

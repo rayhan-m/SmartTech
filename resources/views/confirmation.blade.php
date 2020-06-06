@@ -62,13 +62,13 @@
                 <p>{{ $item->name }}</p>
                 </li>
                 <li class="col-xs-2 text-center">
-                <p>${{ $item->price }}</p>
+                <p>£{{ $item->price }}</p>
                 </li>
                 <li class="col-xs-2 text-center">
                 <p>{{ $item->qty }} Items</p>
                 </li>
                 <li class="col-xs-2 text-center">
-                <p>${{ $item->price * $item->qty }}</p>
+                <p>£{{ $item->price * $item->qty }}</p>
                 </li>
             </ul>
           @endforeach    
@@ -118,7 +118,7 @@
                    
           <!-- Totel Price -->
           <div class="totel-price">
-            <h4><small> Total Price: </small> ${{Cart::priceTotal()}}</h4>
+            <h4><small> Total Price: </small> £{{Cart::priceTotal()}}</h4>
           </div>
         </div>
         

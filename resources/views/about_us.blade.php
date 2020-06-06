@@ -38,7 +38,7 @@
             <div class="media-left"> <i class="flaticon-delivery-truck-1"></i> </div>
             <div class="media-body">
               <h5>Free Shipping</h5>
-              <span>On order over $99</span></div>
+              <span>On order over £99</span></div>
           </li>
           <!-- Money Return -->
           <li>

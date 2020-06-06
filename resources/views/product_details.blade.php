@@ -54,7 +54,7 @@
                                     <span class="tags">{{$product_details->category->name}}</span>
                                     <h5>{{$product_details->name}}</h5>
                                     <div class="row">
-                                       <div class="col-sm-4"><span class="price">${{$product_details->price}} </span></div>
+                                       <div class="col-sm-4"><span class="price">£{{$product_details->price}} </span></div>
                                     </div>
                                     <div class="row mt-20">
                                        <div class="col-sm-6">
@@ -130,7 +130,7 @@
                            <!-- Content --> 
                            <span class="tag">{{$related_product->category->name}}</span> <a href="{{url('product-details/'.$related_product->id)}}" class="tittle">{{$related_product->name}}</a> </br>
                            <!-- Reviews -->
-                           <div class="price">${{$related_product->price}}</div>
+                           <div class="price">£{{$related_product->price}}</div>
                            <a href="#." class="cart-btn"><i class="icon-basket-loaded"></i></a> 
                         </article>
                      </div>

@@ -114,7 +114,7 @@
       <!-- Cart Part -->
       <ul class="nav navbar-right cart-pop">
         <li> <a href="{{route('cart')}}"  role="button" ><span class="itm-cont">{{Cart::content()->count()}}</span> <i class="flaticon-shopping-bag"></i> <strong>My Cart</strong> <br>
-          <span>{{Cart::count()}} item(s) - ${{Cart::priceTotal()}}</span></a>
+          <span>{{Cart::count()}} item(s) - £{{Cart::priceTotal()}}</span></a>
         </li>
       </ul>
     </div>

@@ -31,7 +31,7 @@
                                                             <th scope="col">#</th>
                                                             <th scope="col">Item Name</th>
                                                             <th scope="col">Unit Price</th>
-                                                            <th scope="col">Quentity</th>
+                                                            <th scope="col">Quantity</th>
                                                             <th scope="col">Cost</th>
                                                         </tr>
                                                     </thead>

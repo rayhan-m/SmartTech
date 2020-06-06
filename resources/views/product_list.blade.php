@@ -51,7 +51,7 @@
                     <span class="tag">{{@$product->category->name}}</span> <a href="{{url('product-details/'.@$product->id)}}" class="tittle">{{@$product->name}}</a> </br>
                     <!-- Reviews -->
                     
-                    <div class="price">${{@$product->price}}</div>
+                    <div class="price">£{{@$product->price}}</div>
                     <a href="{{ url('cart-store/'.@$product->id.'/1')}}" class="cart-btn"><i class="icon-basket-loaded"></i></a> </article>
                 </div>
                 @endforeach
@@ -86,7 +86,7 @@
                            <!-- Content --> 
                            <span class="tag">{{$related_product->category->name}}</span> <a href="{{url('product-details/'.$related_product->id)}}" class="tittle">{{$related_product->name}}</a> </br>
                            <!-- Reviews -->
-                           <div class="price">${{$related_product->price}}</div>
+                           <div class="price">£{{$related_product->price}}</div>
                            <a href="{{ url('cart-store/'.@$product->id.'/1')}}" class="cart-btn"><i class="icon-basket-loaded"></i></a> 
                         </article>
                      </div>

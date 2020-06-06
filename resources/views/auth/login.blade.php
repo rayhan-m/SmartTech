@@ -77,26 +77,51 @@
                 <li class="col-sm-12">
                   <label>Full Name
                     <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                    @error('name')
+                    <span class="invalid-feedback" role="alert">
+                        <strong style="color:red;">{{ $message }}</strong>
+                    </span>
+                    @enderror
                   </label>
                 </li>
                 <li class="col-sm-12">
                   <label>Email
                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                    @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong style="color:red;">{{ $message }}</strong>
+                    </span>
+                    @enderror
                   </label>
                 </li>
                 <li class="col-sm-12">
                   <label>Password
-                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                    <input id="password" type="password" class="form-control @error('registration_password') is-invalid @enderror" name="registration_password" required autocomplete="new-password">
+                    @error('registration_password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong style="color:red;">{{ $message }}</strong>
+                    </span>
+                    @enderror
                   </label>
                 </li>
                 <li class="col-sm-12">
                   <label>Confirm Password
                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                    @error('password_confirmation')
+                    <span class="invalid-feedback" role="alert">
+                        <strong style="color:red;">{{ $message }}</strong>
+                    </span>
+                    @enderror
                   </label>
                 </li>
                 <li class="col-sm-12">
                   <label>Phone No
                     <input type="text" onkeyup="isNumberKeyDecimal(this);" class="form-control" name="phone" placeholder="">
+                    @error('phone')
+                    <span class="invalid-feedback" role="alert">
+                        <strong style="color:red;">{{ $message }}</strong>
+                    </span>
+                    @enderror
                   </label>
                 </li>
                 <li class="col-sm-12 text-left">

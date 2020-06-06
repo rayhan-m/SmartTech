@@ -56,7 +56,7 @@
                                                   <div class="modal-dialog" role="document">
                                                   <div class="modal-content">
                                                   <div class="modal-header">
-                                                      <h5 class="modal-title" id="exampleModalLabel-2">Edit Category</h5>
+                                                      <h5 class="modal-title" id="exampleModalLabel-2">Edit Product Category</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                       </button>
@@ -102,7 +102,7 @@
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel-2">Portfolio Category</h5>
+                          <h5 class="modal-title" id="exampleModalLabel-2">Product Category</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>

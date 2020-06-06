@@ -70,7 +70,7 @@
                     <p>{{ $item->name}}</p>
                   </div>
                 </div></td>
-              <td class="text-center padding-top-60">${{ $item->price}}</td>
+              <td class="text-center padding-top-60">£{{ $item->price}}</td>
               <td class="text-center"><!-- Quinty -->
                 <div class="quinty">
                     <form action="{{ url('cart-update/'.$item->rowId) }}" method="PUT">
@@ -86,7 +86,7 @@
                     </form>
                 </div>
             </td>
-            <td class="text-center padding-top-60">${{$item->price *  $item->qty}}</td>
+            <td class="text-center padding-top-60">£{{$item->price *  $item->qty}}</td>
               <td class="text-center padding-top-60"><a href="{{ url('cart-delete/'.$item->rowId)}}" class="remove"><i class="fa fa-close"></i></a></td>
             </tr>
              @endforeach
@@ -95,7 +95,7 @@
           
           <!-- Grand total -->
           <div class="g-totel">
-            <h5>Grand total: <span>${{Cart::priceTotal()}}</span></h5>
+            <h5>Grand total: <span>£{{Cart::priceTotal()}}</span></h5>
           </div>
         </div>
         
