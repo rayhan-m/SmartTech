@@ -86,8 +86,8 @@
                 </li>
                 <li class="col-sm-12">
                   <label>Email
-                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-                    @error('email')
+                    <input id="email" type="email" class="form-control @error('registration_') is-invalid @enderror" name="registration_" value="{{ old('email') }}" required autocomplete="email">
+                    @error('registration_')
                     <span class="invalid-feedback" role="alert">
                         <strong style="color:red;">{{ $message }}</strong>
                     </span>

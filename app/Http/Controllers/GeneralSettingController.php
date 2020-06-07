@@ -20,9 +20,6 @@ class GeneralSettingController extends Controller
     }
     public function update(Request $request)
     {
-        // dd($request);
-        // return $request;
-
         $request->validate([
             'site_name' => 'required|max:150',
             'site_title' => 'required',
@@ -54,15 +51,10 @@ class GeneralSettingController extends Controller
     }
     public function updateLogo(Request $request)
     {
-        //  dd($request);
-        //  return $request;
-
         $request->validate([
             'logo' => 'required',
         ]);
         $general_setting = GeneralSetting::find(1);
-        // $file_path= $general_setting->logo;
-        // unlink($file_path);
         $logo = "";
         if ($request->file('logo') != "") {
             $file = $request->file('logo');
@@ -75,20 +67,14 @@ class GeneralSettingController extends Controller
 
         Toastr::success('Operation successful', 'Success');
         return redirect()->back();
-        // return redirect('general-setting');
 
     }
     public function updateFav(Request $request)
     {
-        //  dd($request);
-        // return $request;
-
         $request->validate([
             'fav' => 'required',
         ]);
         $general_setting = GeneralSetting::find(1);
-        // $file_path= $general_setting->fav;
-        // unlink($file_path);
         $fav = "";
         if ($request->file('fav') != "") {
             $file = $request->file('fav');
@@ -98,10 +84,8 @@ class GeneralSettingController extends Controller
             $general_setting->fav = $fav;
         }
         $general_setting->save();
-
         Toastr::success('Operation successful', 'Success');
         return redirect()->back();
-        // return redirect('general-setting');
     }
 
 
